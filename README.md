@@ -21,7 +21,7 @@ This is a small tool for those who use **SERVERS** to develop and run programs.
 - Run in the Terminal by:
 
 ```bash
-python3 mail.py [subject] [message]
+python3 mail.py --send_by [send_by] --send_to [send_to]  --password [password] --subject [subject] --message [message]
 ```
 
 ## 2. TODO List
