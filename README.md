@@ -16,7 +16,7 @@ This is a small tool for those who use **SERVERS** to develop and run programs.
 
 - Record your authorization code and DO NOT show it to others.
 
-- modified your own information in main.py.
+- modified your own information [here](https://github.com/fengjiang5/mail_message/blob/af6ebd1b40f0b3241e098e364ff5e23e9a15fbe0/mail.py#LL16C1-L18C29) in main.py.
 
 - Run in the Terminal by:
 
