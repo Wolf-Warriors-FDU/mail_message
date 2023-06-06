@@ -26,13 +26,15 @@ This is a small tool for those who use **SERVERS** to develop and run programs.
 ```bash
 python3 mail.py --send_by [send_by] --send_to [send_to]  --password [password] --subject [subject] --message [message]
 ```
-- or modify the message in mail.sh and run :
+<!-- - or modify the message in mail.sh and run :
 ```bash
 bash ./email.sh
-```
+``` -->
+DO NOT USE mail.sh NOW!
 
 ## 3. TODO List
 
 - [ ] Add more functions.
 - [ ] Support add attachment.
 - [ ] Add CHANGELOG.
+- [ ] release.
