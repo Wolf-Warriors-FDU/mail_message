@@ -7,10 +7,13 @@
  * @LastEditTime: 2023-06-06 20:32:03
 -->
 
-## 0. Description
+## 0. Target
+The **Final** target is to achieve deep learning code training monitoring, which can notify individuals of important information in the form of emails.
+
+## 1. Description
 This is a small tool for those who use **SERVERS** to develop and run programs.
 
-## 1. Usage
+## 2. Usage
 
 - Change the settings of your QQ email and enable the SMTP service. You can follow the [toturial](www.cnblogs.com/kimsbo/p/10671851.html).
 
@@ -28,7 +31,8 @@ python3 mail.py --send_by [send_by] --send_to [send_to]  --password [password] -
 bash ./email.sh
 ```
 
-## 2. TODO List
+## 3. TODO List
 
 - [ ] Add more functions.
 - [ ] Support add attachment.
+- [ ] Add CHANGELOG.
