@@ -4,7 +4,7 @@ version: 1.0
 Author: JiangFeng
 Date: 2023-06-05 13:37:46
 LastEditors: JiangFeng
-LastEditTime: 2023-06-06 23:02:41
+LastEditTime: 2023-06-07 19:04:11
 '''
 import smtplib
 import argparse
@@ -46,8 +46,8 @@ class Mail(object):
             print("Success send email to {} with subject {}.".format(
                 self.send_to, subject
             ))
-        except Exception as e:
-            logging.exception(e)
+        except:
+            print("Wrong when send email")
 
 
 def get_arg():
