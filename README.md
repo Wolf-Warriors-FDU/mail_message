@@ -4,7 +4,7 @@
  * @Author: JiangFeng
  * @Date: 2023-06-05 14:00:07
  * @LastEditors: JiangFeng
- * @LastEditTime: 2023-06-06 20:32:03
+ * @LastEditTime: 2023-06-07 09:46:52
 -->
 
 ## 0. Target
@@ -13,24 +13,36 @@ The **Final** target is to achieve deep learning code training monitoring, which
 ## 1. Description
 This is a small tool for those who use **SERVERS** to develop and run programs.
 
+## 2. Installation
+
+- You can install this package by pip:
+```bash
+pip install emailmessage
+```
+
+- You can also install from source:
+```bash
+conda activate [your envs]
+python3 setup.py install
+```
 ## 2. Usage
 
 - Change the settings of your QQ email and enable the SMTP service. You can follow the [toturial](www.cnblogs.com/kimsbo/p/10671851.html).
 
 - Record your authorization code and DO NOT show it to others.
 
-- modified your own information [here](https://github.com/fengjiang5/mail_message/blob/af6ebd1b40f0b3241e098e364ff5e23e9a15fbe0/mail.py#LL16C1-L18C29) in main.py.
+- Here is an example:
+```python
+from emailmessage.mail import Mail
 
-- Run in the Terminal by :
-
-```bash
-python3 mail.py --send_by [send_by] --send_to [send_to]  --password [password] --subject [subject] --message [message]
+mail = Mail(send_by=[your email], send_to=[target eamil],
+            password=[your authorization code])
+subject = 'Test emailmessafe'
+message = 'Hello, you can use our emailmessage now.'
+mail.send_email(subject, message)
 ```
-<!-- - or modify the message in mail.sh and run :
-```bash
-bash ./email.sh
-``` -->
-DO NOT USE mail.sh NOW!
+
+- Check whether you reveive an email.
 
 ## 3. TODO List
 
